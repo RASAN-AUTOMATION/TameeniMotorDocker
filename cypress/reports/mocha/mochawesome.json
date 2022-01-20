@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-01-19T14:30:55.584Z",
+    "end": "2022-01-19T14:31:07.347Z",
+    "duration": 11763,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "569e024e-6c2d-4bfe-bae9-1641b3d25f2f",
+      "title": "",
+      "fullFile": "cypress/integration/TameeniPlatform/FailedTestCases.js",
+      "file": "cypress/integration/TameeniPlatform/FailedTestCases.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e0e10ed9-926b-43cc-b921-c4c3cf392373",
+          "title": "Check Failed Test cases ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "OPEN Tameeni PLATFORME",
+              "fullTitle": "Check Failed Test cases  OPEN Tameeni PLATFORME",
+              "timedOut": null,
+              "duration": 7351,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "Landing.navigate('');\nLanding.Assertion();",
+              "err": {},
+              "uuid": "1c4bcdd7-9af6-4568-9fc2-2030c9749144",
+              "parentUUID": "e0e10ed9-926b-43cc-b921-c4c3cf392373",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check system when Click Registration Card",
+              "fullTitle": "Check Failed Test cases  Check system when Click Registration Card",
+              "timedOut": null,
+              "duration": 4347,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "Landing.ClickRegistrationCard();\nLanding.ChecksequenceNumber();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[formcontrolname=\"sequenceNumber\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[formcontrolname=\"sequenceNumber\"]`, but never found it.\n    at LandingPage.ChecksequenceNumber (http://172.30.40.183/__cypress/tests?p=cypress/integration/TameeniPlatform/FailedTestCases.js:233:59)\n    at Context.eval (http://172.30.40.183/__cypress/tests?p=cypress/integration/TameeniPlatform/FailedTestCases.js:178:13)",
+                "diff": null
+              },
+              "uuid": "91df7325-d19f-4add-b01e-c0c07a663035",
+              "parentUUID": "e0e10ed9-926b-43cc-b921-c4c3cf392373",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1c4bcdd7-9af6-4568-9fc2-2030c9749144"
+          ],
+          "failures": [
+            "91df7325-d19f-4add-b01e-c0c07a663035"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11698,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
