@@ -23,7 +23,7 @@ services:
     command: "firefox:test"
     # if you want to debug FF run, pass DEBUG variable like
     environment:
-      - DEBUG=cypress:server:browsers:firefox-util,cypress:server:util:process_profiler
+      # - DEBUG=cypress:server:browsers:firefox-util,cypress:server:util:process_profiler
     volumes:
       - ./cypress/videos:/cypress-docker/cypress/videos
       - ./cypress/reports:/cypress-docker/cypress/reports
