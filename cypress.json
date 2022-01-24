@@ -1,14 +1,5 @@
 {
-    "baseUrl": "http://172.30.40.183/motorweb/#/home",
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-        "reporterEnabled": "mochawesome",
-        "mochawesomeReporterOptions": {
-            "reportDir": "cypress/reports/mocha",
-            "quite": false,
-            "overwrite": false,
-            "html": false,
-            "json": false
-        }
-    }
+    "baseUrl": "http://172.30.40.183/motorweb/#/home"
+  
+    
 }
