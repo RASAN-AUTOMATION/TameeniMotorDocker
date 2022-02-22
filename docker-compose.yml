@@ -10,11 +10,10 @@ services:
 
   # this container will run Cypress test using Chrome browser
   e2e-chrome:
-    image: "tameenimotor"
+    image: "cypress/docker"
     command: "chrome:test"
     volumes:
-    #  - ./cypress/videos:/cypress-docker/cypress/videos
-    #  - ./cypress/reports:/cypress-docker/cypress/reports
+       - ./cypress/reports:/cypress-docker/cypress/reports
 
   # this container will run Cypress test using Firefox browser
   # note that both Chrome and Firefox browsers were pre-installed in the Docker image
